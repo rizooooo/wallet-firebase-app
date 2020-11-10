@@ -1,0 +1,63 @@
+@import "variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "bootswatch";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.a {
+  color: white !important; 
+}
+
+.active-avatar {
+  border: 4px solid #df691a;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #4e5d6c;
+}
+
+
+.height-full {
+  height: 100vh !important;
+}
+
+.paid {
+ text-decoration: line-through; 
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

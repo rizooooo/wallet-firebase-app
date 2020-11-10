@@ -1,0 +1,10 @@
+const PEOPLE = 'PEOPLE';
+const USERS = 'USERS';
+const TRANSACTIONS = 'TRANSACTIONS';
+
+
+export {
+    USERS,
+    PEOPLE,
+    TRANSACTIONS
+}
